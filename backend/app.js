@@ -9,8 +9,8 @@ const products = require("./routes/productRoute");
 app.use("/api/v1", products);
 
 //user
-// const user = require("./routes/userRoute");
-// app.use("/api/v1", user);
+const user = require("./routes/userRoute");
+app.use("/api/v1", user);
 
 //Middleware for error
 app.use(errorMiddeleware);
